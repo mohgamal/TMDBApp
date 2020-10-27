@@ -22,6 +22,8 @@
 		F5324C272547EFD30064F184 /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5324C262547EFD30064F184 /* TMDB-Info.plist */; };
 		F5324C2B2547EFE00064F184 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C2A2547EFE00064F184 /* AppEnvironment.swift */; };
 		F5324C2F2547EFEC0064F184 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C2E2547EFEC0064F184 /* Utils.swift */; };
+		F5324C382547F06D0064F184 /* AppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C362547F06D0064F184 /* AppDI.swift */; };
+		F5324C392547F06D0064F184 /* DiscoverDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C372547F06D0064F184 /* DiscoverDI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		F5324C262547EFD30064F184 /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
 		F5324C2A2547EFE00064F184 /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		F5324C2E2547EFEC0064F184 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F5324C362547F06D0064F184 /* AppDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		F5324C372547F06D0064F184 /* DiscoverDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverDI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 		F5324C1F2547EF790064F184 /* AppDI */ = {
 			isa = PBXGroup;
 			children = (
+				F5324C362547F06D0064F184 /* AppDI.swift */,
+				F5324C372547F06D0064F184 /* DiscoverDI.swift */,
 			);
 			path = AppDI;
 			sourceTree = "<group>";
@@ -342,7 +348,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5324B332547EC3C0064F184 /* AppDelegate.swift in Sources */,
+				F5324C392547F06D0064F184 /* DiscoverDI.swift in Sources */,
 				F5324B352547EC3C0064F184 /* SceneDelegate.swift in Sources */,
+				F5324C382547F06D0064F184 /* AppDI.swift in Sources */,
 				F5324C2B2547EFE00064F184 /* AppEnvironment.swift in Sources */,
 				F5324C2F2547EFEC0064F184 /* Utils.swift in Sources */,
 			);
