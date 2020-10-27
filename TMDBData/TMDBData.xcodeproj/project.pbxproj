@@ -12,6 +12,10 @@
 		F5324BA92547ED400064F184 /* TMDBData.h in Headers */ = {isa = PBXBuildFile; fileRef = F5324B9B2547ED400064F184 /* TMDBData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5324BE72547ED800064F184 /* TMDBDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5324BE62547ED800064F184 /* TMDBDomain.framework */; };
 		F5324BE82547ED800064F184 /* TMDBDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5324BE62547ED800064F184 /* TMDBDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5324C082547EE960064F184 /* DiscoverDataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C052547EE960064F184 /* DiscoverDataRepo.swift */; };
+		F5324C092547EE960064F184 /* DiscoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C062547EE960064F184 /* DiscoverModel.swift */; };
+		F5324C0A2547EE960064F184 /* DiscoverRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C072547EE960064F184 /* DiscoverRemoteDataSource.swift */; };
+		F5324C0F2547EED80064F184 /* URLSession+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C0E2547EED80064F184 /* URLSession+ResultType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		F5324BA62547ED400064F184 /* TMDBDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDataTests.swift; sourceTree = "<group>"; };
 		F5324BA82547ED400064F184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5324BE62547ED800064F184 /* TMDBDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMDBDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5324C052547EE960064F184 /* DiscoverDataRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverDataRepo.swift; sourceTree = "<group>"; };
+		F5324C062547EE960064F184 /* DiscoverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverModel.swift; sourceTree = "<group>"; };
+		F5324C072547EE960064F184 /* DiscoverRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverRemoteDataSource.swift; sourceTree = "<group>"; };
+		F5324C0E2547EED80064F184 /* URLSession+ResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+ResultType.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,8 @@
 		F5324B9A2547ED400064F184 /* TMDBData */ = {
 			isa = PBXGroup;
 			children = (
+				F5324C0D2547EED00064F184 /* Extensions */,
+				F5324C042547EE840064F184 /* Discover */,
 				F5324B9B2547ED400064F184 /* TMDBData.h */,
 				F5324B9C2547ED400064F184 /* Info.plist */,
 			);
@@ -111,6 +121,24 @@
 				F5324BE62547ED800064F184 /* TMDBDomain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5324C042547EE840064F184 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F5324C052547EE960064F184 /* DiscoverDataRepo.swift */,
+				F5324C062547EE960064F184 /* DiscoverModel.swift */,
+				F5324C072547EE960064F184 /* DiscoverRemoteDataSource.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		F5324C0D2547EED00064F184 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5324C0E2547EED80064F184 /* URLSession+ResultType.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +203,7 @@
 				TargetAttributes = {
 					F5324B972547ED400064F184 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					F5324BA02547ED400064F184 = {
 						CreatedOnToolsVersion = 12.1;
@@ -222,6 +251,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5324C092547EE960064F184 /* DiscoverModel.swift in Sources */,
+				F5324C0F2547EED80064F184 /* URLSession+ResultType.swift in Sources */,
+				F5324C082547EE960064F184 /* DiscoverDataRepo.swift in Sources */,
+				F5324C0A2547EE960064F184 /* DiscoverRemoteDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +402,7 @@
 		F5324BAD2547ED400064F184 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -385,6 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MGamal.TMDBData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -393,6 +428,7 @@
 		F5324BAE2547ED400064F184 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -417,6 +453,7 @@
 		F5324BB02547ED400064F184 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = TMDBDataTests/Info.plist;
@@ -435,6 +472,7 @@
 		F5324BB12547ED400064F184 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = TMDBDataTests/Info.plist;
