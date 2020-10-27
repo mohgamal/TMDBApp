@@ -10,6 +10,9 @@
 		F5324B7C2547ECA90064F184 /* TMDBDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5324B722547ECA90064F184 /* TMDBDomain.framework */; };
 		F5324B812547ECA90064F184 /* TMDBDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324B802547ECA90064F184 /* TMDBDomainTests.swift */; };
 		F5324B832547ECA90064F184 /* TMDBDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = F5324B752547ECA90064F184 /* TMDBDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5324BF92547EE590064F184 /* DiscoverEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324BF62547EE590064F184 /* DiscoverEntity.swift */; };
+		F5324BFA2547EE590064F184 /* DiscoverDomainRepoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324BF72547EE590064F184 /* DiscoverDomainRepoInterface.swift */; };
+		F5324BFB2547EE590064F184 /* DiscoverInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324BF82547EE590064F184 /* DiscoverInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		F5324B7B2547ECA90064F184 /* TMDBDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5324B802547ECA90064F184 /* TMDBDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDomainTests.swift; sourceTree = "<group>"; };
 		F5324B822547ECA90064F184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5324BF62547EE590064F184 /* DiscoverEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverEntity.swift; sourceTree = "<group>"; };
+		F5324BF72547EE590064F184 /* DiscoverDomainRepoInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverDomainRepoInterface.swift; sourceTree = "<group>"; };
+		F5324BF82547EE590064F184 /* DiscoverInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		F5324B742547ECA90064F184 /* TMDBDomain */ = {
 			isa = PBXGroup;
 			children = (
+				F5324BF52547EE480064F184 /* Discover */,
 				F5324B752547ECA90064F184 /* TMDBDomain.h */,
 				F5324B762547ECA90064F184 /* Info.plist */,
 			);
@@ -84,6 +91,16 @@
 				F5324B822547ECA90064F184 /* Info.plist */,
 			);
 			path = TMDBDomainTests;
+			sourceTree = "<group>";
+		};
+		F5324BF52547EE480064F184 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F5324BF72547EE590064F184 /* DiscoverDomainRepoInterface.swift */,
+				F5324BF62547EE590064F184 /* DiscoverEntity.swift */,
+				F5324BF82547EE590064F184 /* DiscoverInteractor.swift */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +164,7 @@
 				TargetAttributes = {
 					F5324B712547ECA90064F184 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					F5324B7A2547ECA90064F184 = {
 						CreatedOnToolsVersion = 12.1;
@@ -194,6 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5324BFB2547EE590064F184 /* DiscoverInteractor.swift in Sources */,
+				F5324BFA2547EE590064F184 /* DiscoverDomainRepoInterface.swift in Sources */,
+				F5324BF92547EE590064F184 /* DiscoverEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +362,7 @@
 		F5324B872547ECA90064F184 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -357,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MGamal.TMDBDomain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +388,7 @@
 		F5324B882547ECA90064F184 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -389,6 +413,7 @@
 		F5324B8A2547ECA90064F184 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = TMDBDomainTests/Info.plist;
@@ -407,6 +432,7 @@
 		F5324B8B2547ECA90064F184 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = TMDBDomainTests/Info.plist;
