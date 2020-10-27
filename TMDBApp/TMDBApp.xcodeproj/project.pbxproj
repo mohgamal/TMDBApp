@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		F5324B332547EC3C0064F184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324B322547EC3C0064F184 /* AppDelegate.swift */; };
 		F5324B352547EC3C0064F184 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324B342547EC3C0064F184 /* SceneDelegate.swift */; };
-		F5324B372547EC3C0064F184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324B362547EC3C0064F184 /* ViewController.swift */; };
-		F5324B3A2547EC3C0064F184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5324B382547EC3C0064F184 /* Main.storyboard */; };
 		F5324B3C2547EC3D0064F184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5324B3B2547EC3D0064F184 /* Assets.xcassets */; };
 		F5324B3F2547EC3D0064F184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5324B3D2547EC3D0064F184 /* LaunchScreen.storyboard */; };
 		F5324B4A2547EC3D0064F184 /* TMDBAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324B492547EC3D0064F184 /* TMDBAppTests.swift */; };
@@ -21,6 +19,9 @@
 		F5324BE12547ED760064F184 /* TMDBDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5324BDF2547ED760064F184 /* TMDBDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5324BE32547ED790064F184 /* TMDBPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5324BE22547ED790064F184 /* TMDBPresentation.framework */; };
 		F5324BE42547ED790064F184 /* TMDBPresentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5324BE22547ED790064F184 /* TMDBPresentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5324C272547EFD30064F184 /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5324C262547EFD30064F184 /* TMDB-Info.plist */; };
+		F5324C2B2547EFE00064F184 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C2A2547EFE00064F184 /* AppEnvironment.swift */; };
+		F5324C2F2547EFEC0064F184 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5324C2E2547EFEC0064F184 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +61,6 @@
 		F5324B2F2547EC3C0064F184 /* TMDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5324B322547EC3C0064F184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5324B342547EC3C0064F184 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5324B362547EC3C0064F184 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5324B392547EC3C0064F184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5324B3B2547EC3D0064F184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5324B3E2547EC3D0064F184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5324B402547EC3D0064F184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +73,9 @@
 		F5324BDB2547ED720064F184 /* TMDBData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMDBData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5324BDF2547ED760064F184 /* TMDBDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMDBDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5324BE22547ED790064F184 /* TMDBPresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMDBPresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5324C262547EFD30064F184 /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
+		F5324C2A2547EFE00064F184 /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		F5324C2E2547EFEC0064F184 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,13 +130,11 @@
 		F5324B312547EC3C0064F184 /* TMDBApp */ = {
 			isa = PBXGroup;
 			children = (
-				F5324B322547EC3C0064F184 /* AppDelegate.swift */,
-				F5324B342547EC3C0064F184 /* SceneDelegate.swift */,
-				F5324B362547EC3C0064F184 /* ViewController.swift */,
-				F5324B382547EC3C0064F184 /* Main.storyboard */,
-				F5324B3B2547EC3D0064F184 /* Assets.xcassets */,
-				F5324B3D2547EC3D0064F184 /* LaunchScreen.storyboard */,
-				F5324B402547EC3D0064F184 /* Info.plist */,
+				F5324C252547EF920064F184 /* Resources */,
+				F5324C242547EF8D0064F184 /* Helpers */,
+				F5324C232547EF890064F184 /* AppFiles */,
+				F5324C202547EF7D0064F184 /* AppEnvironment */,
+				F5324C1F2547EF790064F184 /* AppDI */,
 			);
 			path = TMDBApp;
 			sourceTree = "<group>";
@@ -165,6 +165,49 @@
 				F5324BDB2547ED720064F184 /* TMDBData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5324C1F2547EF790064F184 /* AppDI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppDI;
+			sourceTree = "<group>";
+		};
+		F5324C202547EF7D0064F184 /* AppEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				F5324C2A2547EFE00064F184 /* AppEnvironment.swift */,
+			);
+			path = AppEnvironment;
+			sourceTree = "<group>";
+		};
+		F5324C232547EF890064F184 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F5324B322547EC3C0064F184 /* AppDelegate.swift */,
+				F5324B342547EC3C0064F184 /* SceneDelegate.swift */,
+				F5324B402547EC3D0064F184 /* Info.plist */,
+				F5324C262547EFD30064F184 /* TMDB-Info.plist */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		F5324C242547EF8D0064F184 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5324C2E2547EFEC0064F184 /* Utils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F5324C252547EF920064F184 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5324B3B2547EC3D0064F184 /* Assets.xcassets */,
+				F5324B3D2547EC3D0064F184 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +316,7 @@
 			files = (
 				F5324B3F2547EC3D0064F184 /* LaunchScreen.storyboard in Resources */,
 				F5324B3C2547EC3D0064F184 /* Assets.xcassets in Resources */,
-				F5324B3A2547EC3C0064F184 /* Main.storyboard in Resources */,
+				F5324C272547EFD30064F184 /* TMDB-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,9 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5324B372547EC3C0064F184 /* ViewController.swift in Sources */,
 				F5324B332547EC3C0064F184 /* AppDelegate.swift in Sources */,
 				F5324B352547EC3C0064F184 /* SceneDelegate.swift in Sources */,
+				F5324C2B2547EFE00064F184 /* AppEnvironment.swift in Sources */,
+				F5324C2F2547EFEC0064F184 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,14 +380,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F5324B382547EC3C0064F184 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5324B392547EC3C0064F184 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5324B3D2547EC3D0064F184 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -478,7 +514,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
-				INFOPLIST_FILE = TMDBApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TMDBApp/AppFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
-				INFOPLIST_FILE = TMDBApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TMDBApp/AppFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
